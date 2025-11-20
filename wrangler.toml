@@ -1,26 +1,6 @@
 # /workspaces/cfp-testbed1/wrangler.toml
 name = "cfp-testbed1"
 pages_build_output_dir = "./"
-# For Pages, set your Cloudflare account id and Pages project name
-# account_id = "REPLACE_WITH_ACCOUNT_ID"
-# project_name = "REPLACE_WITH_PROJECT_NAME"
-
-# Wrangler/Workers compatibility date
-compatibility_date = "2025-11-20"
-
-# Use a simple javascript/site deployment (no build step)
-type = "javascript"
-
-[build]
-# No build command for a single index.html; set if you need one, e.g. "npm run build"
-command = ""
-cwd = "."
 
 [vars]
-MY_ENV_VAR = "some_value"
-
-[env.production]
-vars.MY_ENV_VAR = "production_value"
-
-[env.preview]
-vars.MY_ENV_VAR = "preview_value"
+API_KEY = "1234567asdf"
