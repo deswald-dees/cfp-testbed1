@@ -16,7 +16,7 @@ jobs:
           rm -rf .github
           rm -f .gitignore LICENSE
       - name: Install Wrangler CLI
-        run: npm install -g wrangler@4.49.0
+        run: npm install -g wrangler@3.114.15
       - name: Publish to Cloudflare Pages
         run: |
           PROJECT_NAME=cfp-testbed1
@@ -35,3 +35,17 @@ jobs:
           # Pass the GITHUB_TOKEN as an environment variable to allow the deployment action 
           # to update GitHub deployment status (if using npx wrangler deploy directly)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Attempt to create the Cloudflare Pages project (will succeed if already exists)
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CF_USER_API_TOKEN }}
+      #     accountId: ${{ secrets.CF_ACCOUNT_ID }}
+      #     command: pages project create cfp-testbed1 --production-branch=${{ github.ref_name }}
+      # - name: Deploying to Cloudflare Pages
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CF_USER_API_TOKEN }}
+      #     command: pages deploy .
+      #     projectName: cfp-testbed1
+      #     branch: ${{ github.ref_name }} # Optional: specify the branch name
