@@ -1,5 +1,6 @@
 # /workspaces/cfp-testbed1/wrangler.toml
 name = "cfp-testbed1"
+pages_build_output_dir = "./"
 # For Pages, set your Cloudflare account id and Pages project name
 # account_id = "REPLACE_WITH_ACCOUNT_ID"
 # project_name = "REPLACE_WITH_PROJECT_NAME"
@@ -14,13 +15,6 @@ type = "javascript"
 # No build command for a single index.html; set if you need one, e.g. "npm run build"
 command = ""
 cwd = "."
-
-[site]
-# Root directory containing index.html
-bucket = "./"
-# Optional: only include what you need
-include = ["index.html", "assets/**", "images/**"]
-exclude = ["LICENSE", "README.md", ".git/**"]
 
 [vars]
 MY_ENV_VAR = "some_value"
