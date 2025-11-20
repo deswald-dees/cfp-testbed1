@@ -9,7 +9,14 @@ jobs:
     name: Deploy
     steps:
       - name: Checkout Repository
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
+      - name: Attempt to create the Cloudflare Pages project (will succeed if already exists)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_USER_API_TOKEN }}
+          # The '|| true' ensures the workflow continues even if the project creation command fails 
+          # because the project already exists (which is expected on subsequent runs)
+          command: pages project create cfp-testbed1 --production-branch=${{ github.ref_name }} || true
       - name: Deploying to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
