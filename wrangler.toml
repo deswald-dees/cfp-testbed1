@@ -2,5 +2,9 @@
 name = "cfp-testbed1"
 pages_build_output_dir = "./"
 
+kv_namespaces = [
+  { binding = "CFP_TESTBED1_KV_NAMESPACE", id = "CFP_TESTBED1_KV_ID" }
+]
+
 [vars]
 API_KEY = "1234567asdf"
