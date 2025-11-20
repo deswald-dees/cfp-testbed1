@@ -14,3 +14,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_USER_API_TOKEN }}
           command: pages deploy .
+          projectName: cfp-testbed1
+          branch: ${{ github.ref_name }} # Optional: specify the branch name
