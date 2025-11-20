@@ -16,7 +16,7 @@ jobs:
           rm -rf .github
           rm -f .gitignore LICENSE
       - name: Install Wrangler CLI
-        run: npm install -g wrangler@4.49.0
+        run: npm install -g wrangler@3.114.15
       - name: Create project if it doesn't exist, then deploy
         run: |
           PROJECT_NAME=cfp-testbed1
