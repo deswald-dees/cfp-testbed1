@@ -30,8 +30,7 @@ jobs:
           echo "Starting deployment to $PROJECT_NAME..."
           # Then run the deploy command using the standard wrangler CLI command
           npx wrangler pages deploy $BUILD_DIR \
-            --project-name=$PROJECT_NAME \
-            --binding=CFP_TESTBED1_KVBD:d81e16323c0d4ab09fbd8c30c5f7c161
+            --project-name=$PROJECT_NAME
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CF_USER_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
