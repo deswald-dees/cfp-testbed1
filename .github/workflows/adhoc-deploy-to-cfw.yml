@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: Exclude specific files/patterns from deployment directory
+        run: |
+          # Remove files or directories that should not be deployed
+          rm -rf .github
+          rm -f .gitignore LICENSE
       - name: Attempt to create the Cloudflare Pages project (will succeed if already exists)
         uses: cloudflare/wrangler-action@v3
         with:
