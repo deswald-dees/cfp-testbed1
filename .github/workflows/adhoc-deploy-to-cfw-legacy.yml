@@ -1,4 +1,4 @@
-name: Adhoc Deploy To Cloudflare Pages
+name: Adhoc Deploy To Cloudflare Pages (Legacy)
 
 on:
   workflow_dispatch:
