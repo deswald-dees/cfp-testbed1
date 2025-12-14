@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,28 +16,39 @@
     header.container > nav li {
       padding: 0 var(--pico-nav-element-spacing-horizontal)
     }
-    .album-selector-dropdown ul li { cursor: pointer;}
+    .album-selector-dropdown ul li { cursor: pointer; }
+    .gallery-container { padding-top: 0;}
+    .gallery-settings-navbar { line-height: 1.2px; }
+    .gallery-status-navbar { line-height: 0.8px; }
   </style>
-  <title>Light Server App</title>
+  <title>My Gallery</title>
 </head>
 <body>
   <header class="container"><nav>
-    <ul><li>Light Server App (Nano Gallery)</li></ul>
+    <ul><li>My Gallery</li></ul>
     <ul><li>
-      <details class="album-selector-dropdown dropdown" x-data="AlbumSelector()">
+      <details class="album-selector-dropdown dropdown" x-data="{}">
         <summary>Album</summary>
-        <ul @click="changeAlbum">
-          <li data-album-selector="abstract"><i class="fa-solid fa-check" x-show="currentAlbum === 'abstract'"></i> Abstract</li>
-          <li data-album-selector="architecture"><i class="fa-solid fa-check" x-show="currentAlbum === 'architecture'"></i> Architecture</li>
-          <li data-album-selector="nature"><i class="fa-solid fa-check" x-show="currentAlbum === 'nature'"></i> Nature</li>
-          <li data-album-selector="people-asian-njp"><i class="fa-solid fa-check" x-show="currentAlbum === 'people-asian-njp'"></i> People <i class="fa-solid fa-earth-asia"></i></li>
-          <li data-album-selector="people-western"><i class="fa-solid fa-check" x-show="currentAlbum === 'people-western'"></i> People <i class="fa-solid fa-flag-usa"></i></li>
+        <ul @click="$store.ngy.changeAlbum">
+          <li data-album-selector="abstract"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'abstract'"></i> Abstract</li>
+          <li data-album-selector="architecture"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'architecture'"></i> Architecture</li>
+          <li data-album-selector="nature"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'nature'"></i> Nature</li>
+          <li data-album-selector="people-asian-njp"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'people-asian-njp'"></i> People <i class="fa-solid fa-earth-asia"></i></li>
+          <li data-album-selector="people-western"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'people-western'"></i> People <i class="fa-solid fa-flag-usa"></i></li>
         </ul>
       </details>
     </li></ul>
   </nav></header>
-  <main class="container">
+  <main class="gallery-container container" x-data="NanoGalleryContainer()">
+    <nav class="gallery-settings-navbar">
+      <ul><li>Gallery Setting Bar</li></ul>
+      <ul><li>Gallery Setting Button</li></ul>
+    </nav>
     <div id="nanogallery2"></div>
+    <nav class="gallery-status-navbar">
+      <ul><li><span x-text="$store.ngy.currentAlbumTitle"></span></li></ul>
+      <ul><li>Gallery Status Button</li></ul>
+    </nav>
   </main>
 </body>
 </html>
