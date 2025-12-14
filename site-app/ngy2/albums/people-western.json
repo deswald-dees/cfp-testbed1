@@ -1,0 +1,96 @@
+{
+  "name": "People Western",
+  "description": "A collection of photos featuring people from various Western countries.",
+  "images": [
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20130219.01.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20130219.01t.jpg",
+      "title": "Brandi Love 01",
+      "desc": "Brandi Love, 2013-02-19 Pic-01"
+    },
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20130219.02.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20130219.02t.jpg",
+      "title": "Brandi Love 02",
+      "desc": "Brandi Love, 2013-02-19 Pic-02"
+    },
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20130219.03.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20130219.03t.jpg",
+      "title": "Brandi Love 03",
+      "desc": "Brandi Love, 2013-02-19 Pic-03"
+    },
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20160418.01.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20160418.01t.jpg",
+      "title": "Brandi Love 04",
+      "desc": "Brandi Love, 2016-04-18 Pic-01"
+    },
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20160418.02.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20160418.02t.jpg",
+      "title": "Brandi Love 05",
+      "desc": "Brandi Love, 2016-04-18 Pic-02"
+    },
+    {
+      "src": "./album-images/people.western/usa-brandi-love.20160418.03.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-brandi-love.20160418.03t.jpg",
+      "title": "Brandi Love 06",
+      "desc": "Brandi Love, 2016-04-18 Pic-03"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20160401.01.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20160401.01t.jpg",
+      "title": "Cory Chase 01",
+      "desc": "Cory Chase, 2016-04-01 Pic-01"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20160401.02.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20160401.02t.jpg",
+      "title": "Cory Chase 02",
+      "desc": "Cory Chase, 2016-04-01 Pic-02"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20160401.03.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20160401.03t.jpg",
+      "title": "Cory Chase 03",
+      "desc": "Cory Chase, 2016-04-01 Pic-03"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20170502.01.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20170502.01t.jpg",
+      "title": "Cory Chase 04",
+      "desc": "Cory Chase, 2017-05-02 Pic-01"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20170502.02.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20170502.02t.jpg",
+      "title": "Cory Chase 05",
+      "desc": "Cory Chase, 2017-05-02 Pic-02"
+    },
+    {
+      "src": "./album-images/people.western/usa-cory-chase.20170502.03.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-cory-chase.20170502.03t.jpg",
+      "title": "Cory Chase 06",
+      "desc": "Cory Chase, 2017-05-02 Pic-03"
+    },
+    {
+      "src": "./album-images/people.western/usa-julia-ann.20150907.01.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-julia-ann.20150907.01t.jpg",
+      "title": "Julia Ann 01",
+      "desc": "Julia Ann, 2015-09-07 Pic-01"
+    },
+    {
+      "src": "./album-images/people.western/usa-julia-ann.20150907.02.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-julia-ann.20150907.02t.jpg",
+      "title": "Julia Ann 02",
+      "desc": "Julia Ann, 2015-09-07 Pic-02"
+    },
+    {
+      "src": "./album-images/people.western/usa-julia-ann.20150907.03.jpg",
+      "thumb": "./album-images/people.western_thumb/usa-julia-ann.20150907.03t.jpg",
+      "title": "Julia Ann 03",
+      "desc": "Julia Ann, 2015-09-07 Pic-03"
+    }
+  ]
+}

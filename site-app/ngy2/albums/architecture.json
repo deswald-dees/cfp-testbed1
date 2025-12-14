@@ -1,0 +1,102 @@
+{
+  "name": "Architecture & Urban",
+  "description": "Modern structures and cityscapes",
+  "images": [
+    {
+      "src": "https://picsum.photos/id/22/1200/800",
+      "thumb": "https://picsum.photos/id/22/600/400",
+      "title": "Glass Tower",
+      "desc": "Reflections of the modern skyline."
+    },
+    {
+      "src": "https://picsum.photos/id/23/800/1200",
+      "thumb": "https://picsum.photos/id/23/400/600",
+      "title": "Historic Bridge",
+      "desc": "Engineering marvel spanning time."
+    },
+    {
+      "src": "https://picsum.photos/id/24/1200/800",
+      "thumb": "https://picsum.photos/id/24/600/400",
+      "title": "City Lights",
+      "desc": "Urban energy after dark."
+    },
+    {
+      "src": "https://picsum.photos/id/25/800/1200",
+      "thumb": "https://picsum.photos/id/25/400/600",
+      "title": "Geometric Facade",
+      "desc": "Patterns in concrete and steel."
+    },
+    {
+      "src": "https://picsum.photos/id/26/800/1200",
+      "thumb": "https://picsum.photos/id/26/400/600",
+      "title": "Spiral Staircase",
+      "desc": "Ascending into architectural beauty."
+    },
+    {
+      "src": "https://picsum.photos/id/27/1200/800",
+      "thumb": "https://picsum.photos/id/27/600/400",
+      "title": "Cathedral Ceiling",
+      "desc": "Divine geometry overhead."
+    },
+    {
+      "src": "https://picsum.photos/id/28/1200/800",
+      "thumb": "https://picsum.photos/id/28/600/400",
+      "title": "Metro Station",
+      "desc": "Underground artistry in motion."
+    },
+    {
+      "src": "https://picsum.photos/id/29/800/1200",
+      "thumb": "https://picsum.photos/id/29/400/600",
+      "title": "Skyscraper View",
+      "desc": "Looking up at urban giants."
+    },
+    {
+      "src": "https://picsum.photos/id/30/1200/800",
+      "thumb": "https://picsum.photos/id/30/600/400",
+      "title": "Industrial Design",
+      "desc": "Form meets function."
+    },
+    {
+      "src": "https://picsum.photos/id/31/800/1200",
+      "thumb": "https://picsum.photos/id/31/400/600",
+      "title": "Minimalist Space",
+      "desc": "Less is more in design."
+    },
+    {
+      "src": "https://picsum.photos/id/32/1200/800",
+      "thumb": "https://picsum.photos/id/32/600/400",
+      "title": "Rooftop Garden",
+      "desc": "Nature reclaiming the city."
+    },
+    {
+      "src": "https://picsum.photos/id/33/800/1200",
+      "thumb": "https://picsum.photos/id/33/400/600",
+      "title": "Brutalist Beauty",
+      "desc": "Raw concrete expression."
+    },
+    {
+      "src": "https://picsum.photos/id/34/1200/800",
+      "thumb": "https://picsum.photos/id/34/600/400",
+      "title": "Art Deco Detail",
+      "desc": "Ornate elegance preserved."
+    },
+    {
+      "src": "https://picsum.photos/id/35/800/1200",
+      "thumb": "https://picsum.photos/id/35/400/600",
+      "title": "Modern Museum",
+      "desc": "Where art meets architecture."
+    },
+    {
+      "src": "https://picsum.photos/id/36/1200/800",
+      "thumb": "https://picsum.photos/id/36/600/400",
+      "title": "Street Perspective",
+      "desc": "Vanishing point in the city."
+    },
+    {
+      "src": "https://picsum.photos/id/37/800/1200",
+      "thumb": "https://picsum.photos/id/37/400/600",
+      "title": "Glass Atrium",
+      "desc": "Light flooding through transparency."
+    }
+  ]
+}

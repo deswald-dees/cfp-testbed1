@@ -1,0 +1,126 @@
+{
+  "name": "Abstract Art",
+  "description": "Colors, patterns, and creative expressions",
+  "images": [
+    {
+      "src": "https://picsum.photos/id/38/1200/800",
+      "thumb": "https://picsum.photos/id/38/600/400",
+      "title": "Color Burst",
+      "desc": "Vibrant hues in harmony."
+    },
+    {
+      "src": "https://picsum.photos/id/39/800/1200",
+      "thumb": "https://picsum.photos/id/39/400/600",
+      "title": "Liquid Motion",
+      "desc": "Fluid forms in transition."
+    },
+    {
+      "src": "https://picsum.photos/id/40/1200/800",
+      "thumb": "https://picsum.photos/id/40/600/400",
+      "title": "Geometric Dreams",
+      "desc": "Shapes dancing in space."
+    },
+    {
+      "src": "https://picsum.photos/id/41/800/1200",
+      "thumb": "https://picsum.photos/id/41/400/600",
+      "title": "Texture Study",
+      "desc": "Tactile visual experience."
+    },
+    {
+      "src": "https://picsum.photos/id/42/1200/800",
+      "thumb": "https://picsum.photos/id/42/600/400",
+      "title": "Light Play",
+      "desc": "Illumination as art."
+    },
+    {
+      "src": "https://picsum.photos/id/43/800/1200",
+      "thumb": "https://picsum.photos/id/43/400/600",
+      "title": "Monochrome Mood",
+      "desc": "Shades of gray storytelling."
+    },
+    {
+      "src": "https://picsum.photos/id/44/1200/800",
+      "thumb": "https://picsum.photos/id/44/600/400",
+      "title": "Pattern Repetition",
+      "desc": "Infinite visual rhythm."
+    },
+    {
+      "src": "https://picsum.photos/id/45/800/1200",
+      "thumb": "https://picsum.photos/id/45/400/600",
+      "title": "Shadow Dance",
+      "desc": "Darkness defining light."
+    },
+    {
+      "src": "https://picsum.photos/id/46/1200/800",
+      "thumb": "https://picsum.photos/id/46/600/400",
+      "title": "Gradient Flow",
+      "desc": "Smooth color transitions."
+    },
+    {
+      "src": "https://picsum.photos/id/47/800/1200",
+      "thumb": "https://picsum.photos/id/47/400/600",
+      "title": "Minimalist Lines",
+      "desc": "Simplicity in composition."
+    },
+    {
+      "src": "https://picsum.photos/id/48/1200/800",
+      "thumb": "https://picsum.photos/id/48/600/400",
+      "title": "Chaotic Order",
+      "desc": "Structure within randomness."
+    },
+    {
+      "src": "https://picsum.photos/id/49/800/1200",
+      "thumb": "https://picsum.photos/id/49/400/600",
+      "title": "Neon Dreams",
+      "desc": "Electric color palette."
+    },
+    {
+      "src": "https://picsum.photos/id/50/1200/800",
+      "thumb": "https://picsum.photos/id/50/600/400",
+      "title": "Organic Shapes",
+      "desc": "Nature-inspired abstraction."
+    },
+    {
+      "src": "https://picsum.photos/id/51/800/1200",
+      "thumb": "https://picsum.photos/id/51/400/600",
+      "title": "Digital Glitch",
+      "desc": "Beauty in imperfection."
+    },
+    {
+      "src": "https://picsum.photos/id/52/1200/800",
+      "thumb": "https://picsum.photos/id/52/600/400",
+      "title": "Watercolor Wash",
+      "desc": "Soft blending of pigments."
+    },
+    {
+      "src": "https://picsum.photos/id/53/800/1200",
+      "thumb": "https://picsum.photos/id/53/400/600",
+      "title": "Metallic Sheen",
+      "desc": "Reflective surface study."
+    },
+    {
+      "src": "https://picsum.photos/id/54/1200/800",
+      "thumb": "https://picsum.photos/id/54/600/400",
+      "title": "Cosmic Swirl",
+      "desc": "Galaxies in motion."
+    },
+    {
+      "src": "https://picsum.photos/id/55/800/1200",
+      "thumb": "https://picsum.photos/id/55/400/600",
+      "title": "Prismatic Vision",
+      "desc": "Spectrum of possibilities."
+    },
+    {
+      "src": "https://picsum.photos/id/56/1200/800",
+      "thumb": "https://picsum.photos/id/56/600/400",
+      "title": "Ink Splash",
+      "desc": "Spontaneous artistic expression."
+    },
+    {
+      "src": "https://picsum.photos/id/57/800/1200",
+      "thumb": "https://picsum.photos/id/57/400/600",
+      "title": "Crystal Formation",
+      "desc": "Geometric natural beauty."
+    }
+  ]
+}

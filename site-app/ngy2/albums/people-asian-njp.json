@@ -1,0 +1,102 @@
+{
+  "name": "People Asian",
+  "description": "A collection of photos featuring people from various Asian countries (non-Japan).",
+  "images": [
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set18-20170523.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set18-20170523.01t.jpg",
+      "title": "Carolina Fong S18-01",
+      "desc": "Carolina Fong S18, 2017-05-23 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set18-20170523.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set18-20170523.02t.jpg",
+      "title": "Carolina Fong S18-02",
+      "desc": "Carolina Fong S18, 2017-05-23 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set19-20170525.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set19-20170525.01t.jpg",
+      "title": "Carolina Fong S19-01",
+      "desc": "Carolina Fong S19, 2017-05-25 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set19-20170525.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set19-20170525.02t.jpg",
+      "title": "Carolina Fong S19-02",
+      "desc": "Carolina Fong S19, 2017-05-25 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set20-20170529.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set20-20170529.01t.jpg",
+      "title": "Carolina Fong S20-01",
+      "desc": "Carolina Fong S20, 2017-05-29 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set20-20170529.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set20-20170529.02t.jpg",
+      "title": "Carolina Fong S20-02",
+      "desc": "Carolina Fong S20, 2017-05-29 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set21-20170602.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set21-20170602.01t.jpg",
+      "title": "Carolina Fong S21-01",
+      "desc": "Carolina Fong S21, 2017-06-02 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set21-20170602.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set21-20170602.02t.jpg",
+      "title": "Carolina Fong S21-02",
+      "desc": "Carolina Fong S21, 2017-06-02 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set22-20170608.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set22-20170608.01t.jpg",
+      "title": "Carolina Fong S22-01",
+      "desc": "Carolina Fong S22, 2017-06-08 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set22-20170608.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set22-20170608.02t.jpg",
+      "title": "Carolina Fong S22-02",
+      "desc": "Carolina Fong S22, 2017-06-08 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set23-20170615.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set23-20170615.01t.jpg",
+      "title": "Carolina Fong S23-01",
+      "desc": "Carolina Fong S23, 2017-06-15 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-carolina-fong.set23-20170615.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-carolina-fong.set23-20170615.02t.jpg",
+      "title": "Carolina Fong S23-02",
+      "desc": "Carolina Fong S23, 2017-06-15 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-milli.set01-20200807.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-milli.set01-20200807.01t.jpg",
+      "title": "Milli S01-01",
+      "desc": "Milli S01, 2020-08-07 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-milli.set01-20200807.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-milli.set01-20200807.02t.jpg",
+      "title": "Milli S01-02",
+      "desc": "Milli S01, 2020-08-07 Pic-02"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-milli.set02-20200814.01.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-milli.set02-20200814.01t.jpg",
+      "title": "Milli S02-01",
+      "desc": "Milli S02, 2020-08-14 Pic-01"
+    },
+    {
+      "src": "./album-images/people.asian-non-jp/thai-milli.set02-20200814.02.jpg",
+      "thumb": "./album-images/people.asian-non-jp_thumb/thai-milli.set02-20200814.02t.jpg",
+      "title": "Milli S02-02",
+      "desc": "Milli S02, 2020-08-14 Pic-02"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Nature Collection",
+  "description": "Breathtaking landscapes and natural wonders",
+  "images": [
+    {
+      "src": "https://picsum.photos/id/10/1200/800",
+      "thumb": "https://picsum.photos/id/10/600/400",
+      "title": "Forest Path",
+      "desc": "A serene pathway through ancient woods."
+    },
+    {
+      "src": "https://picsum.photos/id/11/800/1200",
+      "thumb": "https://picsum.photos/id/11/400/600",
+      "title": "Mountain Vista",
+      "desc": "Majestic peaks touching the clouds."
+    },
+    {
+      "src": "https://picsum.photos/id/12/1200/800",
+      "thumb": "https://picsum.photos/id/12/600/400",
+      "title": "Ocean Waves",
+      "desc": "The rhythmic dance of the sea."
+    },
+    {
+      "src": "https://picsum.photos/id/13/800/1200",
+      "thumb": "https://picsum.photos/id/13/400/600",
+      "title": "Desert Dunes",
+      "desc": "Golden sands sculpted by the wind."
+    },
+    {
+      "src": "https://picsum.photos/id/14/1200/800",
+      "thumb": "https://picsum.photos/id/14/600/400",
+      "title": "Waterfall Cascade",
+      "desc": "Nature's symphony in flowing water."
+    },
+    {
+      "src": "https://picsum.photos/id/15/800/1200",
+      "thumb": "https://picsum.photos/id/15/400/600",
+      "title": "Autumn Colors",
+      "desc": "A vibrant tapestry of fall foliage."
+    },
+    {
+      "src": "https://picsum.photos/id/16/1200/800",
+      "thumb": "https://picsum.photos/id/16/600/400",
+      "title": "Starry Night",
+      "desc": "The cosmos revealed in darkness."
+    },
+    {
+      "src": "https://picsum.photos/id/17/800/1200",
+      "thumb": "https://picsum.photos/id/17/400/600",
+      "title": "Cherry Blossoms",
+      "desc": "Delicate petals in spring bloom."
+    },
+    {
+      "src": "https://picsum.photos/id/18/1200/800",
+      "thumb": "https://picsum.photos/id/18/600/400",
+      "title": "Canyon Depths",
+      "desc": "Layers of geological history."
+    },
+    {
+      "src": "https://picsum.photos/id/19/800/1200",
+      "thumb": "https://picsum.photos/id/19/400/600",
+      "title": "Northern Lights",
+      "desc": "Aurora's ethereal dance."
+    },
+    {
+      "src": "https://picsum.photos/id/20/1200/800",
+      "thumb": "https://picsum.photos/id/20/600/400",
+      "title": "Tropical Paradise",
+      "desc": "Palm trees swaying in the breeze."
+    },
+    {
+      "src": "https://picsum.photos/id/21/800/1200",
+      "thumb": "https://picsum.photos/id/21/400/600",
+      "title": "Misty Morning",
+      "desc": "Dawn breaking through the fog."
+    }
+  ]
+}

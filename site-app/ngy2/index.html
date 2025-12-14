@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js" integrity="sha384-/TgkGk7p307TH7EXJDuUlgG3Ce1UVolAOFopFekQkkXihi5u/6OCvVKyz1W+idaz" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+  <style>
+    header.container > nav li {
+      padding: 0 var(--pico-nav-element-spacing-horizontal)
+    }
+    .album-selector-dropdown ul li { cursor: pointer;}
+  </style>
+  <title>Light Server App</title>
+</head>
+<body>
+  <header class="container"><nav>
+    <ul><li>Light Server App (Nano Gallery)</li></ul>
+    <ul><li>
+      <details class="album-selector-dropdown dropdown" x-data="AlbumSelector()">
+        <summary>Album</summary>
+        <ul @click="changeAlbum">
+          <li data-album-selector="abstract"><i class="fa-solid fa-check" x-show="currentAlbum === 'abstract'"></i> Abstract</li>
+          <li data-album-selector="architecture"><i class="fa-solid fa-check" x-show="currentAlbum === 'architecture'"></i> Architecture</li>
+          <li data-album-selector="nature"><i class="fa-solid fa-check" x-show="currentAlbum === 'nature'"></i> Nature</li>
+          <li data-album-selector="people-asian-njp"><i class="fa-solid fa-check" x-show="currentAlbum === 'people-asian-njp'"></i> People <i class="fa-solid fa-earth-asia"></i></li>
+          <li data-album-selector="people-western"><i class="fa-solid fa-check" x-show="currentAlbum === 'people-western'"></i> People <i class="fa-solid fa-flag-usa"></i></li>
+        </ul>
+      </details>
+    </li></ul>
+  </nav></header>
+  <main class="container">
+    <div id="nanogallery2"></div>
+  </main>
+</body>
+</html>
