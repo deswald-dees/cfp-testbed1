@@ -15,26 +15,34 @@ jobs:
           # Remove files or directories that should not be deployed
           rm -rf .github
           rm -f .gitignore LICENSE
-      - name: Install Wrangler CLI
-        run: npm install -g wrangler@4.49.0
-      - name: Publish to Cloudflare Pages
-        run: |
-          PROJECT_NAME=cfp-testbed1
-          BUILD_DIR="./" # Change to your build directory
+      - name: Step 2 - Perform deployment via cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_USER_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          wranglerVersion: 4.50.0
+          preCommands: PROJECT_NAME=cfp-testbed1 && npx wrangler pages project create $PROJECT_NAME --production-branch=main || true
+          command: pages deploy
+      # - name: Install Wrangler CLI
+      #   run: npm install -g wrangler@4.49.0
+      # - name: Publish to Cloudflare Pages
+      #   run: |
+      #     PROJECT_NAME=cfp-testbed1
+      #     BUILD_DIR="./" # Change to your build directory
           
-          echo "Attempting to create project $PROJECT_NAME..."
-          # The '|| true' operator is used here in a proper shell context
-          npx wrangler pages project create $PROJECT_NAME \
-            --production-branch=main || true
+      #     echo "Attempting to create project $PROJECT_NAME..."
+      #     # The '|| true' operator is used here in a proper shell context
+      #     npx wrangler pages project create $PROJECT_NAME \
+      #       --production-branch=main || true
           
-          echo "Starting deployment to $PROJECT_NAME..."
-          # Then run the deploy command using the standard wrangler CLI command
-          npx wrangler pages deploy $BUILD_DIR \
-             --config=./wrangler.toml \
-            --project-name=$PROJECT_NAME \
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_USER_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      #     echo "Starting deployment to $PROJECT_NAME..."
+      #     # Then run the deploy command using the standard wrangler CLI command
+      #     npx wrangler pages deploy $BUILD_DIR \
+      #        --config=./wrangler.toml \
+      #       --project-name=$PROJECT_NAME \
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CF_USER_API_TOKEN }}
+      #     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           # Pass the GITHUB_TOKEN as an environment variable to allow the deployment action 
           # to update GitHub deployment status (if using npx wrangler deploy directly)
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
