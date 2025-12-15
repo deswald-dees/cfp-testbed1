@@ -1,5 +1,8 @@
 document.addEventListener('alpine:init', () => {
   console.log('Alpine is ready!');
+
+  lucide.createIcons();
+
   function loadAlbum(albumId) {
     const albumPath = 'albums/' + albumId + '.json';
     jQuery.getJSON(albumPath, function (data) {
@@ -48,6 +51,13 @@ document.addEventListener('alpine:init', () => {
         ],
         galleryDisplayTransition: 'slideUp', galleryDisplayTransitionDuration: 500,
 
+        // ### viewer/lighbox settings
+        slideshowDelay: Alpine.store('ngy').slideshowInterval * 1000,
+        viewerTools:    {
+          topLeft:   'pageCounter, label',
+          topRight:  'fullscreenButton, playPauseButton, closeButton'
+        },
+
         // ### gallery content ### 
         items: nanoGalleryItems,
         locationHash: false
@@ -59,6 +69,7 @@ document.addEventListener('alpine:init', () => {
   loadAlbum(defaultAlbum );
 
   Alpine.store('ngy', {
+    slideshowInterval: 3,
     currentAlbum: defaultAlbum,
     currentAlbumTitle: 'NONE',
     changeAlbum(event) {
@@ -73,6 +84,16 @@ document.addEventListener('alpine:init', () => {
   });
 
   Alpine.data('NanoGalleryContainer', function() {
-    return {}
+    return {
+      updateSlideshowInterval() {
+        const ngy2Instance = jQuery('#nanogallery2').nanogallery2('instance');
+        currentSlideshowDelay = ngy2Instance.VOM.slideshowDelay;
+        newSlideshowDelay = Alpine.store('ngy').slideshowInterval * 1000;
+        if(currentSlideshowDelay === newSlideshowDelay) return;
+
+        ngy2Instance.O.slideshowDelay = newSlideshowDelay;
+        ngy2Instance.VOM.slideshowDelay = newSlideshowDelay;
+      }
+    }
   });
 });

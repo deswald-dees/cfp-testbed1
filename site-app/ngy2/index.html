@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.5.0/css/flag-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js" integrity="sha384-/TgkGk7p307TH7EXJDuUlgG3Ce1UVolAOFopFekQkkXihi5u/6OCvVKyz1W+idaz" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
@@ -17,32 +18,40 @@
       padding: 0 var(--pico-nav-element-spacing-horizontal)
     }
     .album-selector-dropdown ul li { cursor: pointer; }
-    .gallery-container { padding-top: 0;}
+    .gallery-container { padding-top: 0; }
     .gallery-settings-navbar { line-height: 1.2px; }
+    .gallery-settings-navbar ul li { padding: 0 var(--pico-nav-element-spacing-horizontal); }
+    .gallery-settings-navbar label { font-size: 0.7rem; margin-bottom: 0; text-align: right; }
+    .gallery-settings-navbar input[type="range"] { margin-bottom: 0.15rem; }
     .gallery-status-navbar { line-height: 0.8px; }
   </style>
   <title>My Gallery</title>
 </head>
 <body>
   <header class="container"><nav>
-    <ul><li>My Gallery</li></ul>
+    <ul><li><i data-lucide="images"></i> My Gallery</li></ul>
     <ul><li>
       <details class="album-selector-dropdown dropdown" x-data="{}">
         <summary>Album</summary>
         <ul @click="$store.ngy.changeAlbum">
-          <li data-album-selector="abstract"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'abstract'"></i> Abstract</li>
-          <li data-album-selector="architecture"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'architecture'"></i> Architecture</li>
-          <li data-album-selector="nature"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'nature'"></i> Nature</li>
-          <li data-album-selector="people-asian-njp"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'people-asian-njp'"></i> People <i class="fa-solid fa-earth-asia"></i></li>
-          <li data-album-selector="people-western"><i class="fa-solid fa-check" x-show="$store.ngy.currentAlbum === 'people-western'"></i> People <i class="fa-solid fa-flag-usa"></i></li>
+          <li data-album-selector="abstract"><i data-lucide="circle-chevron-right" x-show="$store.ngy.currentAlbum === 'abstract'"></i> Abstract</li>
+          <li data-album-selector="architecture"><i data-lucide="circle-chevron-right" x-show="$store.ngy.currentAlbum === 'architecture'"></i> Architecture</li>
+          <li data-album-selector="nature"><i data-lucide="circle-chevron-right" x-show="$store.ngy.currentAlbum === 'nature'"></i> Nature</li>
+          <li data-album-selector="people-asian-njp"><i data-lucide="circle-chevron-right" x-show="$store.ngy.currentAlbum === 'people-asian-njp'"></i> People <span class="fi fi-jp"></span></li>
+          <li data-album-selector="people-western"><i data-lucide="circle-chevron-right" x-show="$store.ngy.currentAlbum === 'people-western'"></i> People <span class="fi fi-us"></span></li>
         </ul>
       </details>
     </li></ul>
   </nav></header>
   <main class="gallery-container container" x-data="NanoGalleryContainer()">
     <nav class="gallery-settings-navbar">
-      <ul><li>Gallery Setting Bar</li></ul>
-      <ul><li>Gallery Setting Button</li></ul>
+      <ul><li><i data-lucide="settings"></i></li></ul>
+      <ul>
+        <li><label>
+          Slideshow <i style="width: 1.2em; height: 1.2em;" data-lucide="timer"></i> (<span x-text="$store.ngy.slideshowInterval"></span> seconds)
+          <input type="range" x-model="$store.ngy.slideshowInterval" min="3" max="9" step="2" @change="updateSlideshowInterval"/>
+        </label></li>
+      </ul>
     </nav>
     <div id="nanogallery2"></div>
     <nav class="gallery-status-navbar">
